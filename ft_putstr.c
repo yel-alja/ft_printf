@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-alja <yel-alja@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 21:54:23 by yel-alja          #+#    #+#             */
-/*   Updated: 2024/11/20 16:00:21 by yel-alja         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:17:11 by yel-alja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,18 @@ int	ft_putstr(char *str)
 	int	i;
 
 	i = 0;
-	if(!str)
+	if (!str)
 	{
-		write(1,"(null)",6);
+		write(1, "(null)", 6);
 		return (6);
 	}
 	else
-	while (str[i])
 	{
-		write(1, &str[i], 1);
-		i++;
+		while (str[i])
+		{
+			write(1, &str[i], 1);
+			i++;
+		}
 	}
 	return (i);
 }

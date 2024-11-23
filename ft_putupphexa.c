@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putupphexa.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-alja <yel-alja@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 10:16:53 by yel-alja          #+#    #+#             */
 /*   Updated: 2024/11/19 17:04:52 by yel-alja         ###   ########.fr       */

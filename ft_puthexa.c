@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthexa.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-alja <yel-alja@student.1337.ma>          +#+  +:+       +#+        */
+/*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 09:45:20 by yel-alja          #+#    #+#             */
-/*   Updated: 2024/11/19 16:56:29 by yel-alja         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:17:46 by yel-alja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int	ft_puthexa(unsigned long nb)
 
 	hex = "0123456789abcdef";
 	count = 0;
-	
 	if (nb >= 16)
 		count += ft_puthexa(nb / 16);
 	count += ft_putchar(hex[nb % 16]);
@@ -34,4 +33,4 @@ int	ft_puthexa(unsigned long nb)
 //  	printf("\n");
 //      int it = printf("%x", i);
 //      printf("\nim  %d it  %d",im ,it);
-//      }
+// }

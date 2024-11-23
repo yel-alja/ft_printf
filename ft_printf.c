@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-alja <yel-alja@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 22:26:18 by yel-alja          #+#    #+#             */
-/*   Updated: 2024/11/20 17:42:21 by yel-alja         ###   ########.fr       */
+/*   Updated: 2024/11/23 10:10:16 by yel-alja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (str[i])
 	{
+		if (str[i] == '%' && str[i + 1] == '\0')
+			return (-1);
 		if (str[i] == '%')
 		{
 			count += fprin(str[i + 1], args);
@@ -61,13 +63,21 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (count);
 }
-// #include <stdio.h>
 // int main()
 // {
 //    unsigned int j = 1165461;
 //     int *l = &j;
 // 	char tt[] = "ythguthgruhgriurtghut";
-//     int thostyping = printf("%s,hhshshshshshsh%d\n",tt,j);
-// int minetyping = ft_printf ("%s,hhshshshshshsh%d\n",tt,j);
+// 	char *s = tt;
+//     int thostyping = printf("%s,hhshshshshshsh%d\n  hexa : %p\n",tt,j,s);
+// int minetyping = ft_printf ("%s,hhshshshshshsh%d\n  hexa : %p\n",tt,j,s);
 //     printf("mine %d not mine %d\n",thostyping,minetyping);
+// // }
+// #include <stdio.h>
+// #include <limits.h>
+// int main()
+// {
+
+// 	int c = ft_printf("%p", c);
+// 	ft_printf("\n%d",c);
 // }

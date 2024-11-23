@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_put_un_nbr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yel-alja <yel-alja@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: yel-alja <yel-alja@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 09:32:58 by yel-alja          #+#    #+#             */
 /*   Updated: 2024/11/19 18:07:09 by yel-alja         ###   ########.fr       */
