@@ -1,0 +1,3 @@
+ft_printf
+A recreation of the standard printf function from the C standard library, implemented as part of the 42 School curriculum.
+This project demonstrates a deep understanding of variadic functions, formatting, and string manipulation in C.
